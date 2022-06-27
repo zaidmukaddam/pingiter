@@ -1,0 +1,34 @@
+{
+  "name": "@pingiter/cli",
+  "version": "1.0.0",
+  "description": "Pingiter CLI",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node ./index.ts",
+    "build": "ncc build index.ts -o dist && node ./scripts/build-binaries.js && node ./scripts/prepend-head.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@pingiter/api": "^1.0.0",
+    "asciichart": "^1.5.25",
+    "chalk": "^4.1.0",
+    "commander": "^7.2.0",
+    "common-tags": "^1.8.0",
+    "lodash": "^4.17.21",
+    "ora": "^5.4.0",
+    "table": "^6.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@vercel/ncc": "^0.27.0",
+    "pkg": "^4.4.9",
+    "prepend-file": "^2.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "891ff7821ea0d0eced56b554c14f6e4ef5b861b1"
+}

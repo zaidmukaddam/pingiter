@@ -1,0 +1,29 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "build": "npm run build-api && npm run build-cli",
+    "build-cli": "cd ./packages/cli && npm run build",
+    "run-cli": "cd ./packages/cli && npm run dev",
+    "build-api": "cd ./packages/api && npm run build",
+    "publish": "npm run build && lerna publish",
+    "test": "cd ./packages/api && yarn test:watch",
+    "clean": "lerna clean"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.0.0"
+}

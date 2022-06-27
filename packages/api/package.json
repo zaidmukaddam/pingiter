@@ -1,0 +1,40 @@
+{
+  "name": "@pingiter/api",
+  "version": "1.0.0",
+  "description": "Pingiter API",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --outDir dist",
+    "test": "ava",
+    "test:watch": "ava --watch"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/ncc": "^0.28.0",
+    "axios": "^0.21.1",
+    "faker": "^5.5.2",
+    "is-absolute-url": "^3.0.3",
+    "object-sizeof": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "ava": "^3.15.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.test.ts"
+    ],
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "891ff7821ea0d0eced56b554c14f6e4ef5b861b1"
+}
