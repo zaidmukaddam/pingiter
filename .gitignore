@@ -26,5 +26,3 @@ yarn-error.log*
 
 # test data
 *testdata*
-
-${APPDATA}*
