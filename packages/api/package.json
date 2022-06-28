@@ -8,6 +8,10 @@
     "test": "ava",
     "test:watch": "ava --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaidmukaddam/pingiter/blob/main/packages/api"
+  },
   "license": "MIT",
   "dependencies": {
     "@vercel/ncc": "^0.28.0",
@@ -36,5 +40,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "891ff7821ea0d0eced56b554c14f6e4ef5b861b1"
+  "gitHead": "035968f9c8ed1efbf4158cdbaa0b012a41408dd7"
 }
