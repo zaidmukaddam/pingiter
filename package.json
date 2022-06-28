@@ -1,6 +1,5 @@
 {
-  "name": "@pingiter/root",
-  "private": true,
+  "name": "pingiter",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "npm run build-api && npm run build-cli",
