@@ -1,12 +1,13 @@
 {
   "name": "@pingiter/api",
-  "version": "1.2.0",
+  "version": "1.0.0",
   "description": "Pingiter API",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc --outDir dist",
     "test": "ava",
-    "test:watch": "ava --watch"
+    "test:watch": "ava --watch",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -41,5 +42,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "a37e35283ffc9b3cecb587a6f9f15cea81269e7a"
+  "gitHead": "9422e14cd886d6067d92bb35bc2ecc30e289e2d2"
 }
