@@ -12,6 +12,7 @@
     "type": "git",
     "url": "https://github.com/zaidmukaddam/pingiter/blob/main/packages/cli"
   },
+  "author": "Zaid Mukaddam <zaidaltafmukaddam@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@pingiter/api": "^1.0.0",
