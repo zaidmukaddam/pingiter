@@ -1,6 +1,6 @@
 {
   "name": "@pingiter/api",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Pingiter API",
   "main": "dist/index.js",
   "scripts": {
